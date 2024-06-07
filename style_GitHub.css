@@ -1,0 +1,193 @@
+     body{
+                display: flex;
+                justify-content: center;
+            }
+    .outer_container {
+                width: 90%;
+                background-color: #cad2c5;
+            }
+
+    .outer_container div{
+                display: block;
+            }
+    #firstBlock{
+                background-color: #1b1f23;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 80px;
+            }
+
+    
+    #logoSection{
+                width: 10%;
+                /* border :1px solid red; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    #titleSection{
+                font-size: large;
+                letter-spacing: 2px;
+                color: beige;
+                width: 80%;
+                /* border :1px solid blue; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+                    
+            }
+            
+    #inner_container{
+                height: 600px;
+                width: 100%;
+                background-color:#cad2c5;
+                display: flex;
+                flex-direction: row;
+                /* border: 1px solid green; */
+            }
+
+    #firstColumn{
+                height: 600px;
+                width: 33.3%;
+            }
+
+            
+    #leftBox{
+                width: 70%;
+                height: 80%;
+                background-color:rgb(112, 110, 110);
+                /* border: 1px solid ; */
+                border-radius: 15px;
+                margin: 50px auto 0px auto;
+            }
+
+    #secondColumn{
+                height: 600px;
+                width: 66.6%;
+                /* border: 1px solid red; */         
+
+            }
+
+    #rightBox{
+                margin-top: 50px;
+                height: 80%;;
+                width: 90%;   
+                /* border:1px groove yellow; */
+                display: block;
+
+   
+            }
+
+    #firstRow{
+                /* border: 1px solid green; */
+                width: 100%;
+                height: 15%;
+            }
+
+    #firstRow input{
+                background-color:rgb(112, 110, 110);
+                border: 1px groove rgb(112, 110, 110);
+                border-radius: 5px;
+                padding: 10px;
+                font-size: large;
+                width: 80%;        
+
+            }
+
+    input[type="search"] {
+             display: block;
+             margin : 0 auto;
+            }
+
+    ::placeholder{
+
+                color:darkgrey;
+                font-family: sans-serif;
+                letter-spacing: 2px;
+            }
+
+    #middleRow{
+                /* border: 1px solid blueviolet; */
+                width: 100%;
+                height: 40%;
+                display:flex;   
+                justify-content:space-between;
+                align-items: center;
+            
+            }
+    #middleRow div{
+                width: 25%;
+                height: 66%;
+                background-color: rgb(112, 110, 110);
+                border-radius: 10px;
+
+            }
+
+    #lastRow{
+                width: 100%;
+                height: 44%;
+                /* border: 1px groove red; */
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+            }
+    #lchild{
+                width: 100%;
+                height: 80%;
+                background-color: rgb(112, 110, 110);
+                border: 1px groove rgb(112, 110, 110);
+                border-radius: 15px;
+            }
+/* suitable for small(phone) & medium(ipad) devices,screen size is 800px or smaller */
+    @media screen and (max-width:800px){
+            .outer_container {
+                width: 95%;
+            }
+    #logoSection{
+                margin-left: 20px;;
+                /* border:1px solid green; */
+            }
+    #inner_container{
+                height:1040px;
+                display: block;
+            }
+
+     
+    #firstColumn,#secondColumn{
+               width: 100%; 
+               margin: 0px auto;
+               /* border: 1px solid; */
+            }
+
+    #leftBox{
+                width: 240px;
+                height: 340px;
+            }
+    #secondColumn{
+              margin-top: -230px;;  
+              height: 660px;
+              display: flex;
+              justify-content: center;            
+                 }
+     #middleRow{
+                display: flex;
+                flex-direction:column;
+                row-gap: 20px;;
+                width: 100%;
+                height: 50%;
+               
+             
+                }
+    #middleRow div{
+                width: 140px;
+                height: 80px;
+                background-color: rgb(112, 110, 110);
+                border-radius: 10px;
+                }
+ }
+
+        
